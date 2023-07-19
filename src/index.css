@@ -13,3 +13,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_block {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  border: none;
+  width: 200px;
+  height: 45px;
+  background-color: tomato;
+}
+
+span {
+  font-size: 24px;
+  line-height: 1.2;
+  background-color: aqua;
+  width: 47.2%;
+}
+
+.stats_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
