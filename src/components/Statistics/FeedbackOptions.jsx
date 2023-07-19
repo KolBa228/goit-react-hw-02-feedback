@@ -1,7 +1,4 @@
-// import React, { Component } from "react";
-
-import React, { Component } from "react";
-
+import { Component } from "react";
 export class FeedbackOptions extends Component {
   goodIncrement = () => {
     this.setState(prevState => ({
