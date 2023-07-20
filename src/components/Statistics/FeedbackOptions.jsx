@@ -1,30 +1,17 @@
-import { Component } from "react";
-export class FeedbackOptions extends Component {
-  goodIncrement = () => {
-    this.setState(prevState => ({
-      good: prevState.good + 1,
-    }));
-  };
 
-  neutralIncrement = () => {
-    this.setState(prevState => ({
-      neutral: prevState.neutral + 1,
-    }));
-  };
 
-  badIncrement = () => {
-    this.setState(prevState => ({
-      bad: prevState.bad + 1,
-    }));
-  };
+import React from "react";
 
-  getTotal() {
-    const { good, neutral, bad } = this.state;
-    return good + neutral + bad;
-  }
+const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  return (
+    <div className="btn_block">
+      {options.map((option) => (
+        <button key={option} type="button" onClick={() => onLeaveFeedback(option)}>
+          {option}
+        </button>
+      ))}
+    </div>
+  );
+};
 
-  render() {
-    return null; 
-  }
-}
-
+export default FeedbackOptions;

@@ -1,10 +1,12 @@
-import {Statistics} from '../Statistics/Statistics'
+import React from "react";
 
-export const Section = ({ children, title  }) => {
-    return (
-        <section>
-            <h1>{title}</h1>
-            <Statistics/>
-        </section>
-    )
-}
+const Section = ({ title, children }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
+};
+
+export default Section;
