@@ -20,6 +20,8 @@ export function App() {
       case "bad":
         setBad((prevBad) => prevBad + 1);
         return;
+      default:
+        break;
     }
   };
 
